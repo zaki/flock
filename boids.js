@@ -38,7 +38,7 @@
   if ((new RegExp("(iphone|android)", "i")).test(navigator.userAgent)) {
     GAME_SETTINGS.boidCount = 150;
     WIDTH = document.documentElement.clientWidth;
-    HEIGHT = document.documentElement.clientHeight;
+    HEIGHT = document.documentElement.clientHeight - 30;
   }
 
   CyclicQueue = (function() {
