@@ -35,6 +35,12 @@
     return r;
   };
 
+  if ((new RegExp("(iphone|android)", "i")).test(navigator.userAgent)) {
+    GAME_SETTINGS.boidCount = 200;
+    WIDTH = 320;
+    HEIGHT = 480;
+  }
+
   CyclicQueue = (function() {
 
     function CyclicQueue(max_length) {

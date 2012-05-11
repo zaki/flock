@@ -34,6 +34,11 @@ formatNumberLength = (num, length) ->
       r = "0" + r
     r
 
+if (new RegExp("(iphone|android)", "i")).test navigator.userAgent
+  GAME_SETTINGS.boidCount = 200
+  WIDTH  = 320
+  HEIGHT = 480
+
 class CyclicQueue
   constructor: (@max_length) ->
     @values = []
