@@ -35,9 +35,9 @@ formatNumberLength = (num, length) ->
     r
 
 if (new RegExp("(iphone|android)", "i")).test navigator.userAgent
-  GAME_SETTINGS.boidCount = 200
-  WIDTH  = 320
-  HEIGHT = 480
+  GAME_SETTINGS.boidCount = 150
+  WIDTH = document.documentElement.clientWidth
+  HEIGHT = document.documentElement.clientHeight
 
 class CyclicQueue
   constructor: (@max_length) ->

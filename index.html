@@ -2,14 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <title></title>
   <script src="boids.js"></script>
+  <style>
+    html, body {margin: 0; padding: 0; height: 100%; overflow:hidden;}
+  </style>
 </head>
 <body>
   <div style="float:left; padding: 15px;">
-    <canvas id="canvas" width="200" height="200">
+    <canvas id="canvas" width="320" height="480">
       Your browser does not support the canvas tag.
     </canvas>
+    <br />
     <input type="checkbox" checked id="render" />Render!
     <input type="checkbox" id="velocity" />Velocity!
   </div>
