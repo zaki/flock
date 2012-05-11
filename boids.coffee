@@ -35,7 +35,7 @@ formatNumberLength = (num, length) ->
     r
 
 if (new RegExp("(iphone|android)", "i")).test navigator.userAgent
-  GAME_SETTINGS.boidCount = 150
+  GAME_SETTINGS.boidCount = 100
   WIDTH = document.documentElement.clientWidth
   HEIGHT = document.documentElement.clientHeight - 30
 
